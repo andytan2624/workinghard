@@ -12,7 +12,7 @@ function App() {
       <Carousel width={1000}>
           {pictures.map((item, key) =>
             <span key={key}>
-                <img src={item.url} />
+                <img src={item.url} className={styles.images}/>
                 {item.caption}
             </span>
           )}
